@@ -11,7 +11,7 @@ function HomeScreen() {
     <Home />
 }
 
-function Menu(){
+function MenuScreen(){
     return(
         <Center>
             <Text>I am a register screen</Text>
@@ -26,7 +26,7 @@ function Routes() {
         <NavigationContainer initialRouteName='Register'>
             <Stack.Navigator>
                 <Stack.Screen name="HomeScreen" component={HomeScreen}/>
-                <Stack.Screen name='Menu' component={Menu} />
+                <Stack.Screen name='Menu' component={MenuScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )
