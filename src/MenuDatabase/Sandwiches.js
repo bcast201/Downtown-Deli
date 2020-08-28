@@ -1,4 +1,4 @@
-export const CATEGORIES= [
+export const SANDWICHES= [
     {
         id: 0,
         name: "Basic Heros",
@@ -31,3 +31,5 @@ export const CATEGORIES= [
 
     }
 ];
+
+export default Sandwiches
