@@ -2,61 +2,55 @@ import React, {useState} from 'react';
 import { View, Linking, Text, StyleSheet, FlatList, Image, ImageBackground, Button } from 'react-native';
 
 
-export default function BasicHeros({navigation}){
+export default function SpecialtyHeros({navigation}){
     const[BasicHeros, setName] = useState([
         {
             id: 0,
-            name: "Ham & Swiss",
-            image: require('./img/bigbellydeli.jpeg'),
+            name: "'A' St. - Roast Beef & Cheddar",
+            image: require('./img/mapsPhoto1.jpg'),
         },
         {
             id: 1,
-            name:"Ham, Salami, Provalone",
-            image: require('./img/large1.jpg'),
+            name:"'B' St. - Pastrami & Cheese",
+            image: require('./img/mapsPhoto1.jpg'),
         },
         {
             id: 2,
-            name:"Ham & Turkey",
-            image: require('./img/large2.jpg'),
+            name:"'C' St. - Corned Beef & Cheese",
+            image: require('./img/mapsPhoto1.jpg'),
         },
         {
             id: 3,
-            name:"Pepperoni & Provolone",
-            image: require('./img/large3.jpeg'),
+            name:"'I' St. - Pepperoni, Cappicola, & Provolone",
+            image: require('./img/mapsPhoto1.jpg'),
         },
         {
             id: 4,
-            name:"Seafood",
-            image: require('./img/bigbellydeli.jpeg'),
+            name:"'N' St. - Ham, Turkey, Bacon, Swiss, & American",
+            image: require('./img/mapsPhoto1.jpg'),
         },
         {
             id: 5,
-            name:"Tuna",
-            image: require('./img/bigbellydeli.jpeg'),
+            name:"'O' St. Ham, Salami, Cappicola, Prosciutto, & Provolone",
+            image: require('./img/mapsPhoto1.jpg'),
     
         },
         {
             id: 6,
-            name:"Turkey & Hard Salami",
-            image: require('./img/bigbellydeli.jpeg'),
+            name:"'X' St. Roast Beef, Turkey, & Cheddar",
+            image: require('./img/mapsPhoto1.jpg'),
     
         },
         {
             id: 7,
-            name:"Pepperoni & Cheese",
-            image: require('./img/bigbellydeli.jpeg'),
+            name:"'Y' St. Cappicola, Prosciutto, Cheddar & Monterey Jack",
+            image: require('./img/mapsPhoto1.jpg'),
     
         },
         {
             id: 8,
-            name:"Veggie",
-            image: require('./img/bigbellydeli.jpeg'),
-    
-        },
-        {
-            id: 9,
-            name:"3 Cheese",
-            image: require('./img/bigbellydeli.jpeg'),
+            name:"'Z' St. Cappicola, Prosciutto, Cheddar & Monterey Jack",
+            image: require('./img/mapsPhoto1.jpg'),
     
         },
     ]);   

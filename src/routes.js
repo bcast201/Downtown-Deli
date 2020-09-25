@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Home from './HomeScreen'
 import Menu from './MenuScreen'
 import BasicHeros from './BasicHeros'
+import SpecialtyHeros from './SpecialtyHeros'
 
 
 const Stack = createStackNavigator()
@@ -23,6 +24,7 @@ function Routes() {
                 <Stack.Screen name="Danny's Downtown Deli" component={Home}/>
                 <Stack.Screen name='Menu' component={Menu} />
                 <Stack.Screen name='BasicHeros' component={BasicHeros} />
+                <Stack.Screen name='SpecialtyHeros' component={SpecialtyHeros} />
             </Stack.Navigator>
         </NavigationContainer>
     )

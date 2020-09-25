@@ -9,37 +9,37 @@ export default function Menu({navigation}){
             id: 0,
             name: "Basic Heros",
             description: 'Plain and sweet!',
-            image: "./img/large1.jpg",
+            navigate: 'BasicHeros'
         },
         {
             id: 1,
             name:"Specialty Heros ",
             description:'Description goes here',
-            image: "/assets/images/chrome-river.jpg",
+            navigate: 'SpecialtyHeros'
         },
         {
             id: 2,
             name:"Hot Heros",
             description: 'Fresh out of the ove, hot and ready!',
-            image: "/assets/images/breadcrumb-trail.jpg",
+            navigate: 'BasicHeros'
         },
         {
             id: 3,
             name:"Magnificent Seven",
             description: 'Seven of the best sandwiches Lincoln has to offer!',
-            image: "/assets/images/redux-woods.jpg",
+            navigate: 'BasicHeros'
         },
         {
             id: 4,
             name:"Danny's Salads",
             description: 'Description goes here',
-            image: "/assets/images/redux-woods.jpg",
+            navigate: 'BasicHeros'
         },
         {
             id: 5,
             name:"Danny's Soups",
             description: 'Description goes here',
-            image: "/assets/images/redux-woods.jpg",
+            navigate: 'BasicHeros'
     
         }
     ]);    
@@ -54,7 +54,7 @@ export default function Menu({navigation}){
                     data={sandwiches}
                     renderItem={({ item }) => (
                             <View style={styles.item}>
-                            <Text style={styles.title} onPress={() => navigation.navigate('BasicHeros')}>
+                            <Text style={styles.title} onPress={() => navigation.navigate(item.navigate)}>
                                 {item.name}
                             </Text>
                             <Text style={styles.descriptionText}>
